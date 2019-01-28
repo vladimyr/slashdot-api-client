@@ -1,0 +1,53 @@
+{
+  "name": "slashdot-api-client",
+  "version": "0.0.0",
+  "description": "Slashdot API client for node",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "tape ./test.js | tap-spec",
+    "postinstall": "node ./auth.js"
+  },
+  "files": [
+    "index.js",
+    "auth.js"
+  ],
+  "config": {
+    "baseUrl": "https://m.slashdot.org"
+  },
+  "keywords": [
+    "slashdot",
+    "api",
+    "client"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vladimyr/slashdot-api-client.git"
+  },
+  "author": {
+    "email": "d.vladimyr+dev@gmail.com",
+    "name": "Dario Vladovic",
+    "url": "https://github.com/vladimyr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladimyr/slashdot-api-client/issues"
+  },
+  "homepage": "https://github.com/vladimyr/slashdot-api-client",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "got": "^9.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "global-tunnel-ng": "^2.7.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.2"
+  }
+}
